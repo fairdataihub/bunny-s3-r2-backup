@@ -1,0 +1,31 @@
+{
+  "name": "bunny-r2-backup",
+  "version": "1.0.0",
+  "private": true,
+  "author": "FAIR Data Innovations Hub <info@fairdataihub.org> (https://fairdataihub.org)",
+  "license": "MIT",
+  "keywords": [
+    "fair data",
+    "fairhub",
+    "fairdataihub",
+    "calmi2",
+    "calmii"
+  ],
+  "packageManager": "pnpm@11.0.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "scripts:s3_backup": "tsx scripts/s3_backup.ts",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.1147.0",
+    "@aws-sdk/lib-storage": "3.1147.0",
+    "tsx": "4.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "25.6.0",
+    "typescript": "6.0.2"
+  }
+}
